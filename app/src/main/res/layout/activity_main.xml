@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.8"
+		android:orientation="vertical"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/log"/>
+
+		<ScrollView
+			android:id="@+id/mScroll"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:id="@+id/mRecord"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</ScrollView>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/ip_addr"/>
+
+					<EditText
+						android:id="@+id/mIpEdt"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:digits="0123456789."
+						android:inputType="text"
+						android:maxLength="15"
+						android:text="10.1.1.203"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/port"/>
+
+					<EditText
+						android:id="@+id/mPortEdt"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:digits="0123456789"
+						android:inputType="number"
+						android:maxLength="5"
+						android:text="19990"/>
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/BuildingId"/>
+
+					<EditText
+						android:id="@+id/mBuildId"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:digits="0123456789"
+						android:inputType="number"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/PersonalId"/>
+
+					<EditText
+						android:id="@+id/mPersonId"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:digits="0123456789"
+						android:inputType="number"/>
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone">
+
+				<Button
+					android:id="@+id/mGetOpenInfoBtn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/get_open_info"/>
+
+				<Button
+					android:id="@+id/mGetOpenCertBtn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/get_open_cert"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone">
+
+				<Button
+					android:id="@+id/mResetOpenCertBtn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/reset_open_cert"/>
+
+				<Button
+					android:id="@+id/mCloseOpenDoorBtn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/close_open_door"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/mScanBtn"
+					android:layout_width="70dp"
+					android:layout_height="wrap_content"
+					android:text="@string/scan"/>
+
+				<Button
+					android:id="@+id/mOpenBtn"
+					android:layout_width="70dp"
+					android:layout_height="wrap_content"
+					android:text="@string/open"/>
+
+				<ProgressBar
+					android:id="@+id/mProgress"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="gone"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<ListView
+			android:id="@+id/mDeviceList"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</ListView>
+
+	</LinearLayout>
+</LinearLayout>
