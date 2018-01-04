@@ -377,7 +377,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                         Log.e("门列表",""+content);
                         try {
                             JSONObject jsonObject = new JSONObject(content);
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
