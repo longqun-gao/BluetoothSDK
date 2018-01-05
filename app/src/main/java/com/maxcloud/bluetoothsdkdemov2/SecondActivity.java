@@ -32,6 +32,7 @@ import com.maxcloud.bluetoothreadersdkv2.ScanDeviceHelper;
 import com.maxcloud.bluetoothsdkdemov2.net.HttpConnectionInter;
 import com.maxcloud.bluetoothsdkdemov2.net.HttpConnectionTools;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -66,10 +67,13 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.mScroll)
     ScrollView mScrollView;
 
+    private doorList doorList;
+    private List<doorList> list = new ArrayList<>();
+
     private StringBuilder mStringBuilder = new StringBuilder();
     private ScanDeviceHelper mScanDeviceHelper = new ScanDeviceHelper();
     private int scanningTime = 5000;// 扫描时间20s
-    private static final long OPEN_PERIOD = 10000;// 刷卡时间10s
+    private static final long OPEN_PERIOD = 5000;// 刷卡时间10s
 
     private ArrayList<String> mBluetoothDevices = new ArrayList<>();
     private BleDevice mBluetoothDevice, mCurDevice;
@@ -377,6 +381,19 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                         Log.e("门列表",""+content);
                         try {
                             JSONObject jsonObject = new JSONObject(content);
+                            String result = jsonObject.getString("result");
+                            jsonObject = new JSONObject(result);
+                            String openData = jsonObject.getString("openData");
+                            JSONArray jsonArray = jsonObject.getJSONArray("doorList");
+                            for(int i = 0;i<jsonArray.length();i++){
+                                jsonObject = jsonArray.getJSONObject(i);
+                                String doorID =  jsonObject.getString("doorID");
+                                String doorName =  jsonObject.getString("doorName");
+                                String doorPath =  jsonObject.getString("doorPath");
+                                String connectionKey =  jsonObject.getString("connectionKey");
+                                doorList = new doorList(doorID,doorName,doorPath,connectionKey);
+                                list.add(doorList);
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
