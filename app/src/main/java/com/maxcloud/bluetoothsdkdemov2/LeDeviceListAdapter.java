@@ -36,7 +36,10 @@ public class LeDeviceListAdapter extends BaseAdapter {
     private String mAddress;
     private doorList doorList;
     private List<doorList> list = new ArrayList<>();
-
+    ViewHolder viewHolder;
+    String deviceName;
+    BleDevice device;
+    String add;
     private class ViewHolder {
         TextView deviceName;
         TextView deviceAddress;
@@ -86,7 +89,7 @@ public class LeDeviceListAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
-        final ViewHolder viewHolder;
+
         // General ListView optimization code.
         if (view == null) {
             view = mInflator.inflate(R.layout.item_ble_device, viewGroup, false);
@@ -142,16 +145,16 @@ public class LeDeviceListAdapter extends BaseAdapter {
                                     }
                                 }
                             }
-                            BleDevice device = result1.get(i);
 
-                            final String deviceName = device.getName();
+                            device = result1.get(i);
+                            deviceName = device.getName();
                             if (deviceName != null && deviceName.length() > 0){
                                 mHandler.sendEmptyMessage(0x123);
                             }
                             else{
                                 mHandler.sendEmptyMessage(0x124);
                             }
-                            String add = device.getAddress();
+                            add = device.getAddress();
                             mHandler.sendEmptyMessage(0x125);
 
 
