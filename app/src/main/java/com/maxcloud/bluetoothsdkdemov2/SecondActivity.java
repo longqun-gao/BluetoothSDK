@@ -99,7 +99,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mLeDeviceListAdapter = new LeDeviceListAdapter(this);
         mDeviceList.setAdapter(mLeDeviceListAdapter);
         mDeviceList.setOnItemClickListener(this);
-
+        //getDoorList();
     }
 
     private void mayRequestLocation() {
@@ -182,7 +182,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mScanBtn:
-                getDoorList();
+
                 scanLeDevice(true);
                 break;
             case R.id.mOpenBtn:
@@ -391,7 +391,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                                 String doorName =  jsonObject.getString("doorName");
                                 String doorPath =  jsonObject.getString("doorPath");
                                 String connectionKey =  jsonObject.getString("connectionKey");
-                                doorList = new doorList(doorID,doorName,doorPath,connectionKey);
+                                String keyID =  jsonObject.getString("keyID");
+                                doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID);
                                 list.add(doorList);
                             }
                         } catch (JSONException e) {

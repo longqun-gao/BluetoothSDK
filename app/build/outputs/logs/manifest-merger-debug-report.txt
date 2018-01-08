@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\f91fe1ac2275671079e848a647a842e0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:2:1-11:12
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:2:1-22:12
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:2:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\d301e3fc66bc54dd0c161b9220059651\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\fedc81b5183feec34ad42e2205e89aef\AndroidManifest.xml:17:1-28:12
@@ -20,71 +20,71 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrat
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\b5ff858acd7715e846ef1f8f934f2eb9\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\4723a9d3c25d9fd2d0e38b66942c923f\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\27a775d452c98c1ea97f3ecd67645302\AndroidManifest.xml:17:1-30:12
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:11-52
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:11-52
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:2:1-35:12
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:3:11-69
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:3:11-69
 uses-feature#android.hardware.bluetooth_le
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:5:2-7:29
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:5:2-7:29
 	android:required
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:7:3-27
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:7:3-27
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:6:3-47
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:6:3-47
 uses-feature#android.hardware.location.gps
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:9:2-62
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:9:2-62
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:9:16-60
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:9:16-60
 uses-permission#android.permission.INTERNET
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:11:2-63
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:11:2-63
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:11:19-61
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:11:19-61
 uses-permission#android.permission.BLUETOOTH
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:13:2-64
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:11:5-68
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:11:5-68
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:13:2-64
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:11:5-68
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:13:19-62
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:13:19-62
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:14:2-70
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:12:5-74
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:12:5-74
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:14:2-70
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:12:5-74
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:14:19-68
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:14:19-68
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:15:2-77
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:13:5-81
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:13:5-81
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:15:2-77
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:13:5-81
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:15:19-75
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:15:19-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:16:2-75
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:14:5-79
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:14:5-79
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:16:2-75
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:14:5-79
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:16:19-73
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:16:19-73
 application
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:18:2-33:16
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:18:2-33:16
 MERGED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:9:5-20
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:16:5-20:19
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:16:5-20:19
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:16:5-20:19
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:16:5-20:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\d301e3fc66bc54dd0c161b9220059651\AndroidManifest.xml:22:5-26:19
@@ -108,39 +108,39 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\27a775d452c98c1ea97f3ecd67645302\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\27a775d452c98c1ea97f3ecd67645302\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:23:3-29
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:23:3-29
 	android:label
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:21:3-35
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:21:3-35
 	android:roundIcon
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:22:3-48
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:22:3-48
 	android:icon
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:20:3-37
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:20:3-37
 	android:allowBackup
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:19:3-29
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:19:3-29
 	android:theme
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:24:3-34
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:24:3-34
 activity#com.maxcloud.bluetoothsdkdemov2.SecondActivity
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:25:3-31:14
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:25:3-31:14
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:25:13-43
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:25:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:26:4-30:20
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:26:4-30:20
 action#android.intent.action.MAIN
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:27:5-56
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:27:5-56
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:27:13-54
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:27:13-54
 category#android.intent.category.LAUNCHER
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:29:5-64
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:29:5-64
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:29:15-62
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:29:15-62
 activity#com.maxcloud.bluetoothsdkdemov2.MainActivity
-ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:32:3-43
+ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:32:3-43
 	android:name
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:32:13-41
 uses-sdk
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\f91fe1ac2275671079e848a647a842e0\AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\f91fe1ac2275671079e848a647a842e0\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:21:5-23:62
@@ -149,8 +149,8 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gr
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:5:5-7:41
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:7:5-9:41
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\a8ad9fd5801bf52f11606f9501029425\AndroidManifest.xml:7:5-9:41
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:7:5-9:41
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\d301e3fc66bc54dd0c161b9220059651\AndroidManifest.xml:20:5-44
@@ -173,18 +173,18 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\4723a9d3c25d9fd2d0e38b66942c923f\AndroidManifest.xml:21:5-23:58
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\27a775d452c98c1ea97f3ecd67645302\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\27a775d452c98c1ea97f3ecd67645302\AndroidManifest.xml:20:5-22:41
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		ADDED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\XHApp\BluetoothSDKDemo_V2\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:26:9-28:38

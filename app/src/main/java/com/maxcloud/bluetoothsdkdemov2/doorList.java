@@ -9,12 +9,22 @@ public class doorList {
     private String doorName;
     private String doorPath;
     private String connectionKey;
+    private String keyID;
 
-    public doorList(String doorID, String doorName, String doorPath, String connectionKey){
+    public doorList(String doorID, String doorName, String doorPath, String connectionKey,String keyID){
         this.doorID = doorID;
         this.doorName = doorName;
         this.doorPath = doorPath;
         this.connectionKey = connectionKey;
+        this.keyID = keyID;
+    }
+
+    public String getKeyID() {
+        return keyID;
+    }
+
+    public void setKeyID(String keyID) {
+        this.keyID = keyID;
     }
 
     public String getDoorID() {
