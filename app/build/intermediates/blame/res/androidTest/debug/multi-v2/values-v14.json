@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android\\XHApp\\BluetoothSDKDemo_V2\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "E:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v14\\values-v14.xml",
@@ -17,7 +17,7 @@
             ]
         },
         {
-            "outputFile": "E:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "E:\\Android\\XHApp\\BluetoothSDKDemo_V2-0109\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v14\\values-v14.xml",

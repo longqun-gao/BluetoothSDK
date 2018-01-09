@@ -34,12 +34,16 @@ public class LeDeviceListAdapter extends BaseAdapter {
     private List<BleDevice> mLeDevices;
     private LayoutInflater mInflator;
     private String mAddress;
-    private doorList doorList;
+    private doorList doorList,doorList2;
     private List<doorList> list = new ArrayList<>();
     ViewHolder viewHolder;
     String deviceName;
-    BleDevice device;
+    BleDevice device = new BleDevice();
     String add;
+    int rssi;
+    List<Integer> rssiList = new ArrayList<>();
+    List<BleDevice> result1;
+
     private class ViewHolder {
         TextView deviceName;
         TextView deviceAddress;
@@ -89,8 +93,6 @@ public class LeDeviceListAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
-
-        // General ListView optimization code.
         if (view == null) {
             view = mInflator.inflate(R.layout.item_ble_device, viewGroup, false);
             viewHolder = new ViewHolder();
@@ -106,10 +108,10 @@ public class LeDeviceListAdapter extends BaseAdapter {
         Log.e("time",""+time);
         String token = MD5Utils.encode(time + "adminXH");
         Log.e("token",""+token);
-        String url = "http://10.51.39.112:8080/community/openDoor/getDoorByPhone";
+        String url = "http://202.105.104.105:8006/ssh/openDoor/getDoorByPhone";
         HttpConnectionTools.HttpServler(url,
                 HttpConnectionTools.HttpData("projectCode", "123", "token", token,
-                        "userName", "周健龙", "phone", "15107962485"), new HttpConnectionInter() {
+                        "userName", "柳玉豹", "phone", "15107962485"), new HttpConnectionInter() {
                     @Override
                     public void onFinish(String content) {
                         Log.e("门列表",""+content);
@@ -127,27 +129,25 @@ public class LeDeviceListAdapter extends BaseAdapter {
                                     String doorPath =  jsonObject.getString("doorPath");
                                     String connectionKey =  jsonObject.getString("connectionKey");
                                     String keyID =  jsonObject.getString("keyID");
-                                    doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID);
+                                    doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID,openData);
 
                                     list.add(doorList);
                                 }
                             }
-                            List<BleDevice> result1 = new ArrayList<>();
-                            Log.e("doorList.size()",list.size()+"");
-                            Log.e("mLeDevices.size()",mLeDevices.size()+"");
+                            result1 = new ArrayList<>();
                             for (BleDevice bleDevice : mLeDevices) {
                                 for (doorList doorList : list) {
-                                    Log.e("quguhao",doorList.getKeyID().replace("-",""));
-                                    Log.e("mLeDevices.size()",mLeDevices.size()+"");
                                     if (bleDevice.getKeyId().equals(doorList.getKeyID())){
+                                        Log.e("rssi",bleDevice.getRssi()+"");
+                                        Log.e("opendata",doorList.getOpenData());
                                         result1.add(bleDevice);
-                                        Log.e("result1.size()",result1.size()+"");
                                     }
                                 }
                             }
-
                             device = result1.get(i);
                             deviceName = device.getName();
+                            rssi = device.getRssi();
+
                             if (deviceName != null && deviceName.length() > 0){
                                 mHandler.sendEmptyMessage(0x123);
                             }
@@ -185,17 +185,17 @@ public class LeDeviceListAdapter extends BaseAdapter {
 
         @Override
         public void handleMessage(Message msg) {
-           if(msg.what == 0x123){
-               viewHolder.deviceName.setText(deviceName);
-           }else if(msg.what == 0x124){
-               viewHolder.deviceName.setText(R.string.unknown_device);
-           }else if(msg.what == 0x125){
-               viewHolder.deviceAddress.setText(add + "<->" + device.getRandomCast());
-           }else if(msg.what == 0x126){
-               viewHolder.deviceImg.setVisibility(View.VISIBLE);
-           }else if(msg.what == 0x127){
-               viewHolder.deviceImg.setVisibility(View.GONE);
-           }
+            if(msg.what == 0x123){
+                viewHolder.deviceName.setText(deviceName);
+            }else if(msg.what == 0x124){
+                viewHolder.deviceName.setText(R.string.unknown_device);
+            }else if(msg.what == 0x125){
+                viewHolder.deviceAddress.setText(add + "<->" + device.getRandomCast());
+            }else if(msg.what == 0x126){
+                viewHolder.deviceImg.setVisibility(View.VISIBLE);
+            }else if(msg.what == 0x127){
+                viewHolder.deviceImg.setVisibility(View.GONE);
+            }
         }
 
     };

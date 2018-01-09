@@ -8,7 +8,7 @@ MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\c
 MERGED from [com.android.support:design:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\25370f64bfe7df45c0572d38581e5cd2\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:2:1-11:12
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:2:1-22:12
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:2:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\d301e3fc66bc54dd0c161b9220059651\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\fedc81b5183feec34ad42e2205e89aef\AndroidManifest.xml:17:1-28:12
@@ -53,26 +53,26 @@ ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:11:2-6
 		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:11:19-61
 uses-permission#android.permission.BLUETOOTH
 ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:13:2-64
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:11:5-68
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:11:5-68
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:11:5-68
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:11:5-68
 	android:name
 		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:13:19-62
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:14:2-70
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:12:5-74
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:12:5-74
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:12:5-74
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:12:5-74
 	android:name
 		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:14:19-68
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:15:2-77
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:13:5-81
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:13:5-81
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:13:5-81
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:13:5-81
 	android:name
 		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:15:19-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:16:2-75
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:14:5-79
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:14:5-79
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:14:5-79
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:14:5-79
 	android:name
 		ADDED from E:\Android\XHApp\BluetoothSDK\app\src\main\AndroidManifest.xml:16:19-73
 application
@@ -83,8 +83,8 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gr
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:9:5-20
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:16:5-20:19
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:16:5-20:19
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:16:5-20:19
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:16:5-20:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\d301e3fc66bc54dd0c161b9220059651\AndroidManifest.xml:22:5-26:19
@@ -149,8 +149,8 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gr
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\bb088ee6fc7c042761d43a04ceea24c9\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\ec5347289079975fe81fbc26573087c0\AndroidManifest.xml:5:5-7:41
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:7:5-9:41
-MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\828806ceddb9436e7d76171bdb02314f\AndroidManifest.xml:7:5-9:41
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:7:5-9:41
+MERGED from [:bluetoothreadersdk_v2-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bluetoothreadersdk_v2-release.aar\fcdf5219d709955030ce604e51d1a5b3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b4971979bc06b878f9bd08b32c9e3d23\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\d301e3fc66bc54dd0c161b9220059651\AndroidManifest.xml:20:5-44

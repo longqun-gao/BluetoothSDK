@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="bluetoothreadersdk_v2-release:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothreadersdk_v2-release.aar/828806ceddb9436e7d76171bdb02314f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothreadersdk_v2-release.aar/828806ceddb9436e7d76171bdb02314f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothreadersdk_v2-release.aar/fcdf5219d709955030ce604e51d1a5b3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothreadersdk_v2-release.aar/fcdf5219d709955030ce604e51d1a5b3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

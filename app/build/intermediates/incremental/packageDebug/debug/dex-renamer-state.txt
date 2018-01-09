@@ -1,4 +1,4 @@
-#Mon Jan 08 18:13:04 CST 2018
-base.0=E\:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+#Tue Jan 09 18:36:12 CST 2018
+base.0=E\:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-file.0=E\:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18\\classes.dex
+file.0=E\:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

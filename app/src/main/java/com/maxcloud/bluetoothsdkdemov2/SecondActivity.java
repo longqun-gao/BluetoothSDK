@@ -15,7 +15,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -29,12 +28,6 @@ import com.maxcloud.bluetoothreadersdkv2.Conversion;
 import com.maxcloud.bluetoothreadersdkv2.ProtocolHelper;
 import com.maxcloud.bluetoothreadersdkv2.ProtocolListener;
 import com.maxcloud.bluetoothreadersdkv2.ScanDeviceHelper;
-import com.maxcloud.bluetoothsdkdemov2.net.HttpConnectionInter;
-import com.maxcloud.bluetoothsdkdemov2.net.HttpConnectionTools;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,9 +60,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.mScroll)
     ScrollView mScrollView;
 
-    private doorList doorList;
-    private List<doorList> list = new ArrayList<>();
-
     private StringBuilder mStringBuilder = new StringBuilder();
     private ScanDeviceHelper mScanDeviceHelper = new ScanDeviceHelper();
     private int scanningTime = 5000;// 扫描时间20s
@@ -99,7 +89,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mLeDeviceListAdapter = new LeDeviceListAdapter(this);
         mDeviceList.setAdapter(mLeDeviceListAdapter);
         mDeviceList.setOnItemClickListener(this);
-        //getDoorList();
     }
 
     private void mayRequestLocation() {
@@ -182,7 +171,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mScanBtn:
-
                 scanLeDevice(true);
                 break;
             case R.id.mOpenBtn:
@@ -268,7 +256,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         /*
          * 此处填写从接口获取的通讯密钥
          */
-        byte[] connectKeyB = Conversion.HexString2Bytes("3637C7CE42398C5C418415C82A842A88");
+        byte[] connectKeyB = Conversion.HexString2Bytes("C522FC0FA08440463A38DC89641F3A72");
 
 //        if (openCert == null || openCert.length == 0) {
 //            appendString("还没获取开门证书！");
@@ -281,9 +269,10 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         /*
          * 此处填写从接口获取的开门证书
          */
-        byte[] openDataB = Conversion.HexString2Bytes("1419231E0606060606A8");
-        openDataB = Conversion.bytesHighLowChange(openDataB);
-        appendString("openDataB反一下：" + Conversion.Bytes2HexString(openDataB));
+        byte[] openDataB = Conversion.HexString2Bytes("0819189809080808082D");
+        // 不需要反，开门方法里面封装了
+        //openDataB = Conversion.bytesHighLowChange(openDataB);
+        //appendString("openDataB反一下：" + Conversion.Bytes2HexString(openDataB));
 
         scanLeDevice(false);
 
@@ -365,46 +354,4 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
             }
         });
     }
-
-    //获取门列表
-    private void getDoorList(){
-        String time = DateUtils.getCurrentTime_Today_Min();
-        Log.e("time",""+time);
-        String token = MD5Utils.encode(time + "adminXH");
-        Log.e("token",""+token);
-        String url = "http://10.51.39.112:8080/community/openDoor/getDoorByPhone";
-        HttpConnectionTools.HttpServler(url,
-                HttpConnectionTools.HttpData("projectCode", "123", "token", token,
-                        "userName", "周健龙", "phone", "15107962485"), new HttpConnectionInter() {
-                    @Override
-                    public void onFinish(String content) {
-                        Log.e("门列表",""+content);
-                        try {
-                            JSONObject jsonObject = new JSONObject(content);
-                            String result = jsonObject.getString("result");
-                            jsonObject = new JSONObject(result);
-                            String openData = jsonObject.getString("openData");
-                            JSONArray jsonArray = jsonObject.getJSONArray("doorList");
-                            for(int i = 0;i<jsonArray.length();i++){
-                                jsonObject = jsonArray.getJSONObject(i);
-                                String doorID =  jsonObject.getString("doorID");
-                                String doorName =  jsonObject.getString("doorName");
-                                String doorPath =  jsonObject.getString("doorPath");
-                                String connectionKey =  jsonObject.getString("connectionKey");
-                                String keyID =  jsonObject.getString("keyID");
-                                doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID);
-                                list.add(doorList);
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                    @Override
-                    public void onError(Exception e) {
-                        Log.e("error","失败");
-                    }
-                });
-    }
-
 }

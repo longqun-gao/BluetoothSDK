@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Android\\XHApp\\BluetoothSDKDemo_V2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "E:\\Android\\XHApp\\BluetoothSDKDemo_V2-0109\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\a588f7ffbbf98cbdff3764a0467413ea\\res\\values-v24\\values-v24.xml",

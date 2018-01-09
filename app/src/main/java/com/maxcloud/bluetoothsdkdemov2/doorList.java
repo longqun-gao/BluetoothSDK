@@ -5,18 +5,31 @@ package com.maxcloud.bluetoothsdkdemov2;
  */
 
 public class doorList {
+    private String openData;
     private String doorID;
     private String doorName;
     private String doorPath;
     private String connectionKey;
     private String keyID;
 
-    public doorList(String doorID, String doorName, String doorPath, String connectionKey,String keyID){
+    public doorList(String doorID, String doorName, String doorPath, String connectionKey, String keyID, String openData){
         this.doorID = doorID;
         this.doorName = doorName;
         this.doorPath = doorPath;
         this.connectionKey = connectionKey;
         this.keyID = keyID;
+        this.openData = openData;
+    }
+
+    public doorList(){
+    }
+
+    public String getOpenData() {
+        return openData;
+    }
+
+    public void setOpenData(String openData) {
+        this.openData = openData;
     }
 
     public String getKeyID() {
