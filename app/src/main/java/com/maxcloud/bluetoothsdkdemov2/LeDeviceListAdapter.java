@@ -34,7 +34,7 @@ public class LeDeviceListAdapter extends BaseAdapter {
     private List<BleDevice> mLeDevices;
     private LayoutInflater mInflator;
     private String mAddress;
-    private doorList doorList,doorList2;
+    //private doorList doorList;
     private List<doorList> list = new ArrayList<>();
     ViewHolder viewHolder;
     String deviceName;
@@ -111,7 +111,7 @@ public class LeDeviceListAdapter extends BaseAdapter {
         String url = "http://202.105.104.105:8006/ssh/openDoor/getDoorByPhone";
         HttpConnectionTools.HttpServler(url,
                 HttpConnectionTools.HttpData("projectCode", "123", "token", token,
-                        "userName", "柳玉豹", "phone", "15107962485"), new HttpConnectionInter() {
+                        "userName", "周健龙", "phone", "15107962485"), new HttpConnectionInter() {
                     @Override
                     public void onFinish(String content) {
                         Log.e("门列表",""+content);
@@ -129,9 +129,9 @@ public class LeDeviceListAdapter extends BaseAdapter {
                                     String doorPath =  jsonObject.getString("doorPath");
                                     String connectionKey =  jsonObject.getString("connectionKey");
                                     String keyID =  jsonObject.getString("keyID");
-                                    doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID,openData);
+                                    Constant.doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID,openData);
 
-                                    list.add(doorList);
+                                    list.add(Constant.doorList);
                                 }
                             }
                             result1 = new ArrayList<>();
@@ -147,7 +147,7 @@ public class LeDeviceListAdapter extends BaseAdapter {
                             device = result1.get(i);
                             deviceName = device.getName();
                             rssi = device.getRssi();
-
+                            Log.e("adapter_rssi",rssi+"");
                             if (deviceName != null && deviceName.length() > 0){
                                 mHandler.sendEmptyMessage(0x123);
                             }

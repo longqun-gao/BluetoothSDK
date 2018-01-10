@@ -76,6 +76,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     private static final int REQUEST_OPEN_LOCATION = 1;
     private boolean isRefreshing = false;
 
+    private int maxRssi;
+    private int rssiArr[];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -222,6 +225,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                 mBluetoothDevice = bleDevice;
                 appendString("默认选中第一个设备" + address);
                 mLeDeviceListAdapter.chooseDevice(mCurDevice.getAddress());
+                //这里获取到第一个值的rssi，设为最大值。
+                maxRssi = mCurDevice.getRssi();
                 mOpenBtn.setEnabled(true);
             }
         }
@@ -256,7 +261,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         /*
          * 此处填写从接口获取的通讯密钥
          */
-        byte[] connectKeyB = Conversion.HexString2Bytes("C522FC0FA08440463A38DC89641F3A72");
+        byte[] connectKeyB = Conversion.HexString2Bytes(Constant.doorList.getConnectionKey());
 
 //        if (openCert == null || openCert.length == 0) {
 //            appendString("还没获取开门证书！");
@@ -269,7 +274,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         /*
          * 此处填写从接口获取的开门证书
          */
-        byte[] openDataB = Conversion.HexString2Bytes("0819189809080808082D");
+        byte[] openDataB = Conversion.HexString2Bytes(Constant.doorList.getOpenData());
         // 不需要反，开门方法里面封装了
         //openDataB = Conversion.bytesHighLowChange(openDataB);
         //appendString("openDataB反一下：" + Conversion.Bytes2HexString(openDataB));
