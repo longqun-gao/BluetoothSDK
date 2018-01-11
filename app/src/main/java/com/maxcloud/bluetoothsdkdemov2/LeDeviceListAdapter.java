@@ -39,11 +39,15 @@ public class LeDeviceListAdapter extends BaseAdapter {
     ViewHolder viewHolder;
     String deviceName;
     BleDevice device = new BleDevice();
-    String add;
-    int rssi;
+    String address;
+
+    int rssi,maxRssi;
     List<Integer> rssiList = new ArrayList<>();
     List<BleDevice> result1;
 
+    String doorID,doorName,doorPath,connectionKey,keyID,openData;
+
+    private doorList doorList;
     private class ViewHolder {
         TextView deviceName;
         TextView deviceAddress;
@@ -104,6 +108,9 @@ public class LeDeviceListAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) view.getTag();
         }
 
+        /**
+         * 这里是向服务器获取我的门禁列表
+         */
         String time = DateUtils.getCurrentTime_Today_Min();
         Log.e("time",""+time);
         String token = MD5Utils.encode(time + "adminXH");
@@ -120,51 +127,80 @@ public class LeDeviceListAdapter extends BaseAdapter {
                                 JSONObject jsonObject = new JSONObject(content);
                                 String result = jsonObject.getString("result");
                                 jsonObject = new JSONObject(result);
-                                String openData = jsonObject.getString("openData");
+                                openData = jsonObject.getString("openData");
                                 JSONArray jsonArray = jsonObject.getJSONArray("doorList");
                                 for(int i = 0;i<jsonArray.length();i++){
                                     jsonObject = jsonArray.getJSONObject(i);
-                                    String doorID =  jsonObject.getString("doorID");
-                                    String doorName =  jsonObject.getString("doorName");
-                                    String doorPath =  jsonObject.getString("doorPath");
-                                    String connectionKey =  jsonObject.getString("connectionKey");
-                                    String keyID =  jsonObject.getString("keyID");
+                                    doorID =  jsonObject.getString("doorID");
+                                    doorName =  jsonObject.getString("doorName");
+                                    doorPath =  jsonObject.getString("doorPath");
+                                    connectionKey =  jsonObject.getString("connectionKey");
+                                    keyID =  jsonObject.getString("keyID");
                                     Constant.doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID,openData);
 
                                     list.add(Constant.doorList);
                                 }
                             }
+                            /**
+                             * 这里判断我扫描到的门禁列表里
+                             * 是否有和我的门禁列表相同的门
+                             *
+                             * 判断方法：判断Key Id是否相同
+                             * 相同的则添加到result1
+                             *
+                             * result1中的数据是最终的结果，
+                             * 里面的门禁列表我全部都有权限开门
+                             */
                             result1 = new ArrayList<>();
                             for (BleDevice bleDevice : mLeDevices) {
                                 for (doorList doorList : list) {
                                     if (bleDevice.getKeyId().equals(doorList.getKeyID())){
-                                        Log.e("rssi",bleDevice.getRssi()+"");
-                                        Log.e("opendata",doorList.getOpenData());
+                                        Constant.ConnectionKey = doorList.getConnectionKey();
                                         result1.add(bleDevice);
+                                        //将result1中的蓝牙门禁信号存储起来
+                                        rssi = result1.get(i).getRssi();
+                                        rssiList.add(rssi);
+//                                        list.clear();
+//                                        Constant.doorList = new doorList(doorID,doorName,doorPath,connectionKey,keyID,openData);
+//                                        Log.e("Constant.doorList",Constant.doorList.getConnectionKey()+"");
+//                                        list.add(doorList);
                                     }
                                 }
                             }
-                            device = result1.get(i);
-                            deviceName = device.getName();
-                            rssi = device.getRssi();
-                            Log.e("adapter_rssi",rssi+"");
-                            if (deviceName != null && deviceName.length() > 0){
-                                mHandler.sendEmptyMessage(0x123);
+                            //然后取信号最大值:
+                            for(int i=0;i<rssiList.size();i++){
+                                if(i==0){
+                                    maxRssi = rssiList.get(i);
+                                    System.out.println("所有的:" + maxRssi);
+                                }else{
+                                    Log.e("i",i+"");
+                                    maxRssi = Math.max(maxRssi,rssiList.get(i));
+                                    //这里表示已经获取了最大值的Rssi,并且锁定这一行；
+                                    device = result1.get(i);
+                                }
                             }
-                            else{
-                                mHandler.sendEmptyMessage(0x124);
+                            if(rssiList.size() > 0){
+                                System.out.println("最大值:" + maxRssi);
+                                Log.e("门名称",device.getName());
+                                deviceName = device.getName();
+                                if (deviceName != null && deviceName.length() > 0){
+                                    mHandler.sendEmptyMessage(0x123);
+                                }
+                                else{
+                                    mHandler.sendEmptyMessage(0x124);
+                                }
+                                address = device.getAddress();
+                                mHandler.sendEmptyMessage(0x125);
+
+                                if (!TextUtils.isEmpty(mAddress) && mAddress.equals(address)) {
+                                    mHandler.sendEmptyMessage(0x126);
+                                } else {
+                                    mHandler.sendEmptyMessage(0x127);
+                                }
+                            }else{
+                                System.out.println("当前list为空");
                             }
-                            add = device.getAddress();
-                            mHandler.sendEmptyMessage(0x125);
 
-
-                            if (!TextUtils.isEmpty(mAddress) && mAddress.equals(add)) {
-                                mHandler.sendEmptyMessage(0x126);
-
-                            } else {
-                                mHandler.sendEmptyMessage(0x127);
-
-                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -178,7 +214,6 @@ public class LeDeviceListAdapter extends BaseAdapter {
 
         //BleDevice device = mLeDevices.get(i);
 
-
         return view;
     }
     Handler mHandler = new Handler() {
@@ -190,7 +225,7 @@ public class LeDeviceListAdapter extends BaseAdapter {
             }else if(msg.what == 0x124){
                 viewHolder.deviceName.setText(R.string.unknown_device);
             }else if(msg.what == 0x125){
-                viewHolder.deviceAddress.setText(add + "<->" + device.getRandomCast());
+                viewHolder.deviceAddress.setText(address + "<->" + device.getRandomCast());
             }else if(msg.what == 0x126){
                 viewHolder.deviceImg.setVisibility(View.VISIBLE);
             }else if(msg.what == 0x127){

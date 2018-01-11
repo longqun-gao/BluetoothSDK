@@ -1,4 +1,19 @@
-#Wed Jan 10 16:22:13 CST 2018
-base.0=E\:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Thu Jan 11 15:20:49 CST 2018
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=E\:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+base.5=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/54
+base.4=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/51
+base.3=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/53
+base.2=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/50
+base.1=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/55
+base.0=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/52
+file.5=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/54/classes.dex
+file.4=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/51/classes.dex
+file.3=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/53/classes.dex
+file.2=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/50/classes.dex
+file.1=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/55/classes.dex
+file.0=/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/transforms/dexMerger/debug/52/classes.dex

@@ -6,6 +6,6 @@ package com.maxcloud.bluetoothsdkdemov2;
 
 public class Constant {
     public static doorList doorList;
-
+    public static String ConnectionKey;
 }
 

@@ -15,6 +15,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -76,8 +77,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     private static final int REQUEST_OPEN_LOCATION = 1;
     private boolean isRefreshing = false;
 
-    private int maxRssi;
-    private int rssiArr[];
+    List<Integer> rssiList = new ArrayList<>();
+    List<BleDevice> result1;
+    int rssi,maxRssi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -216,6 +218,10 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onScanDevice(BleDevice bleDevice) {
         String address = bleDevice.getAddress();
         appendString("搜索到设备" + address);
+        //将result1中的蓝牙门禁信号存储起来
+        rssi = bleDevice.getRssi();
+        rssiList.add(rssi);
+
         if (!mBluetoothDevices.contains(address)) {
             mBluetoothDevices.add(address);
             mLeDeviceListAdapter.addDevice(bleDevice);
@@ -225,8 +231,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                 mBluetoothDevice = bleDevice;
                 appendString("默认选中第一个设备" + address);
                 mLeDeviceListAdapter.chooseDevice(mCurDevice.getAddress());
-                //这里获取到第一个值的rssi，设为最大值。
-                maxRssi = mCurDevice.getRssi();
                 mOpenBtn.setEnabled(true);
             }
         }
@@ -261,7 +265,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         /*
          * 此处填写从接口获取的通讯密钥
          */
-        byte[] connectKeyB = Conversion.HexString2Bytes(Constant.doorList.getConnectionKey());
+        Log.e("通讯密钥",Constant.ConnectionKey+"");
+        byte[] connectKeyB = Conversion.HexString2Bytes(Constant.ConnectionKey);
 
 //        if (openCert == null || openCert.length == 0) {
 //            appendString("还没获取开门证书！");
@@ -269,11 +274,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 //        } else if (openCert.length != 10){
 //            appendString("开门证书不合法，请检查数据！");
 //            return;
-//        }
+//        }C522FC0FA08440463A38DC89641F3A72
 
         /*
          * 此处填写从接口获取的开门证书
          */
+        Log.e("开门证书",Constant.doorList.getOpenData()+"");
         byte[] openDataB = Conversion.HexString2Bytes(Constant.doorList.getOpenData());
         // 不需要反，开门方法里面封装了
         //openDataB = Conversion.bytesHighLowChange(openDataB);
