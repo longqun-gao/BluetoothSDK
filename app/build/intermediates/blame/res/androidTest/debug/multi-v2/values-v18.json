@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/E:\\Android\\XHApp\\BluetoothSDKDemo_V2-0109\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v18\\values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
@@ -17,21 +32,6 @@
         },
         {
             "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/E:\\Android\\XHApp\\BluetoothSDK\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/E:\\Android\\XHApp\\BluetoothSDKDemo_V2-0109\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
                     "source": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v18\\values-v18.xml",

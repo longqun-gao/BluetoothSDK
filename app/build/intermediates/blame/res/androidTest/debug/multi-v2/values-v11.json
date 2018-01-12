@@ -17,10 +17,10 @@
             ]
         },
         {
-            "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/E:\\Android\\XHApp\\BluetoothSDKDemo_V2-0109\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/longqungao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/bf7e628ec3b5e78247c85400c12432bf/res/values-v11/values-v11.xml",
+                    "source": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -33,10 +33,10 @@
             ]
         },
         {
-            "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/E:\\Android\\XHApp\\BluetoothSDKDemo_V2-0109\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/longqungao/AndroidStudioProjects/BluetoothSDK/C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\bb088ee6fc7c042761d43a04ceea24c9\\res\\values-v11\\values-v11.xml",
+                    "source": "/Users/longqungao/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/bf7e628ec3b5e78247c85400c12432bf/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -94,6 +94,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         mLeDeviceListAdapter = new LeDeviceListAdapter(this);
         mDeviceList.setAdapter(mLeDeviceListAdapter);
         mDeviceList.setOnItemClickListener(this);
+        scanLeDevice(true);
     }
 
     private void mayRequestLocation() {
@@ -176,9 +177,11 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mScanBtn:
-                scanLeDevice(true);
+
                 break;
             case R.id.mOpenBtn:
+
+                //openDoor();
                 openDoor();
                 break;
         }
@@ -201,6 +204,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
             setEnable(true);
             isRefreshing = false;
             mScanDeviceHelper.stopLeScan();
+
         }
     }
 

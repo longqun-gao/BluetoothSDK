@@ -112,16 +112,13 @@ public class LeDeviceListAdapter extends BaseAdapter {
          * 这里是向服务器获取我的门禁列表
          */
         String time = DateUtils.getCurrentTime_Today_Min();
-        Log.e("time",""+time);
         String token = MD5Utils.encode(time + "adminXH");
-        Log.e("token",""+token);
         String url = "http://202.105.104.105:8006/ssh/openDoor/getDoorByPhone";
         HttpConnectionTools.HttpServler(url,
                 HttpConnectionTools.HttpData("projectCode", "123", "token", token,
-                        "userName", "周健龙", "phone", "15107962485"), new HttpConnectionInter() {
+                        "userName", "柳玉豹", "phone", "15107962485"), new HttpConnectionInter() {
                     @Override
                     public void onFinish(String content) {
-                        Log.e("门列表",""+content);
                         try {
                             if(list.size() == 0){
                                 JSONObject jsonObject = new JSONObject(content);
